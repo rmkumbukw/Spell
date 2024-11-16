@@ -1,0 +1,205 @@
+
+video.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire page */
+    z-index: -1; /* Sends the video to the back */
+}
+/* Style for the content */
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding-top: 20%;
+}
+
+.btn,
+.btn2,
+.btn3 {
+    background: linear-gradient(45deg, #5a5a5a, #092701);
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    padding: 1%;
+    margin-top: 10px;
+    margin-right: 1%;
+}
+
+#home,#about,#more_info {
+    background-color: #0000005d;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+ #services{
+    background-color: #4545464f;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+.inpp {
+    background-color: #ffffff;
+    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+}
+
+h1,p,h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 20px;
+    padding-top: 1%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -120px;        /* Adjust image positioning */
+}
+
+.image-container{
+    width: 100%;      /* Set desired width */
+    height: 500px;     /* Set desired height */
+    overflow: hidden;  /* Hide overflowed part of the image */
+    position: relative;
+}
+
+.logo{
+    font-family: "Comforter Brush", cursive;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 60px;
+}
+.all,
+.cont {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.serv{
+padding-top: 1%;
+padding-bottom:1%;
+
+}
+
+
+.heade{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-size: 50px;
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background:linear-gradient(0deg, #0d011d, #0000008f);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    margin: 0 10px;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    background-color: #575757;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 150px;
+        border-radius: 4px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+#point1{
+    font-size: 30px;
+    color: #1efc01;
+}
+
+#point2{
+    font-size: 30px;
+    color: #fc0101;
+}
